@@ -30,10 +30,16 @@ namespace ScadaCharcas
         public int SetTime2;
         private void conectarPLC()
         {
+            //try { 
             modbusClient = new ModbusClient("192.168.0.100", 502); //dirección estática del plc
             modbusClient.Connect();
             MessageBox.Show("Conexión establecida.");
             timer1.Start();
+            //}
+            //catch {
+  
+            //}
+ 
         }
         private void iniciarCaptura()
         {
@@ -57,8 +63,9 @@ namespace ScadaCharcas
             }
             catch
             {
-
-            }
+                MessageBox.Show("No se pudo conectar", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Revise su conexion e IP del PLC", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Stop);  
+         }
         }
 
         private void btn_desconectar_Click(object sender, EventArgs e)
@@ -129,20 +136,35 @@ namespace ScadaCharcas
 
         private void btn_confTm1_Click(object sender, EventArgs e)
         {
+            try { 
             confTime1 = txt_tm1.Text;
             SetTime1 = Int32.Parse(confTime1);
             modbusClient.WriteSingleRegister(0, SetTime1);
             txt_tm1.Clear();
-
+                }
+            catch
+            {
+                MessageBox.Show("No se pudo enviar", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Asegurese de introducir solo numeros enteros", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                txt_tm1.Clear();
+            }
           
         }
 
         private void btn_confTm2_Click(object sender, EventArgs e)
         {
+            try{
             confTime2 = txt_tm2.Text;
             SetTime2 = Int32.Parse(confTime2);
             modbusClient.WriteSingleRegister(2, SetTime2);
             txt_tm2.Clear();
+             }
+            catch
+            {
+                MessageBox.Show("No se pudo enviar", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Asegurese de introducir solo numeros enteros", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                txt_tm2.Clear();
+            }
         }
     }
 }
