@@ -62,13 +62,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.btn_actualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 9);
+            this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 0;
@@ -86,93 +87,113 @@
             // 
             // btn_vibr2_On
             // 
+            this.btn_vibr2_On.Enabled = false;
             this.btn_vibr2_On.Location = new System.Drawing.Point(117, 66);
             this.btn_vibr2_On.Name = "btn_vibr2_On";
             this.btn_vibr2_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr2_On.TabIndex = 2;
             this.btn_vibr2_On.Text = "On";
             this.btn_vibr2_On.UseVisualStyleBackColor = true;
+            this.btn_vibr2_On.Click += new System.EventHandler(this.btn_vibr2_On_Click_1);
             // 
             // btn_vibr4_On
             // 
+            this.btn_vibr4_On.Enabled = false;
             this.btn_vibr4_On.Location = new System.Drawing.Point(117, 124);
             this.btn_vibr4_On.Name = "btn_vibr4_On";
             this.btn_vibr4_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr4_On.TabIndex = 4;
             this.btn_vibr4_On.Text = "On";
             this.btn_vibr4_On.UseVisualStyleBackColor = true;
+            this.btn_vibr4_On.Click += new System.EventHandler(this.btn_vibr4_On_Click);
             // 
             // btn_vibr3_On
             // 
+            this.btn_vibr3_On.Enabled = false;
             this.btn_vibr3_On.Location = new System.Drawing.Point(117, 95);
             this.btn_vibr3_On.Name = "btn_vibr3_On";
             this.btn_vibr3_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr3_On.TabIndex = 3;
             this.btn_vibr3_On.Text = "On";
             this.btn_vibr3_On.UseVisualStyleBackColor = true;
+            this.btn_vibr3_On.Click += new System.EventHandler(this.btn_vibr3_On_Click_1);
             // 
             // btn_vibr8_On
             // 
+            this.btn_vibr8_On.Enabled = false;
             this.btn_vibr8_On.Location = new System.Drawing.Point(117, 240);
             this.btn_vibr8_On.Name = "btn_vibr8_On";
             this.btn_vibr8_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr8_On.TabIndex = 8;
             this.btn_vibr8_On.Text = "On";
             this.btn_vibr8_On.UseVisualStyleBackColor = true;
+            this.btn_vibr8_On.Click += new System.EventHandler(this.btn_vibr8_On_Click);
             // 
             // btn_vibr7_On
             // 
+            this.btn_vibr7_On.Enabled = false;
             this.btn_vibr7_On.Location = new System.Drawing.Point(117, 211);
             this.btn_vibr7_On.Name = "btn_vibr7_On";
             this.btn_vibr7_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr7_On.TabIndex = 7;
             this.btn_vibr7_On.Text = "On";
             this.btn_vibr7_On.UseVisualStyleBackColor = true;
+            this.btn_vibr7_On.Click += new System.EventHandler(this.btn_vibr7_On_Click);
             // 
             // btn_vibr6_On
             // 
+            this.btn_vibr6_On.Enabled = false;
             this.btn_vibr6_On.Location = new System.Drawing.Point(117, 182);
             this.btn_vibr6_On.Name = "btn_vibr6_On";
             this.btn_vibr6_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr6_On.TabIndex = 6;
             this.btn_vibr6_On.Text = "On";
             this.btn_vibr6_On.UseVisualStyleBackColor = true;
+            this.btn_vibr6_On.Click += new System.EventHandler(this.btn_vibr6_On_Click);
             // 
             // btn_vibr5_On
             // 
+            this.btn_vibr5_On.Enabled = false;
             this.btn_vibr5_On.Location = new System.Drawing.Point(117, 153);
             this.btn_vibr5_On.Name = "btn_vibr5_On";
             this.btn_vibr5_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr5_On.TabIndex = 5;
             this.btn_vibr5_On.Text = "On";
             this.btn_vibr5_On.UseVisualStyleBackColor = true;
+            this.btn_vibr5_On.Click += new System.EventHandler(this.btn_vibr5_On_Click);
             // 
             // btn_vibr11_On
             // 
+            this.btn_vibr11_On.Enabled = false;
             this.btn_vibr11_On.Location = new System.Drawing.Point(117, 327);
             this.btn_vibr11_On.Name = "btn_vibr11_On";
             this.btn_vibr11_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr11_On.TabIndex = 11;
             this.btn_vibr11_On.Text = "On";
             this.btn_vibr11_On.UseVisualStyleBackColor = true;
+            this.btn_vibr11_On.Click += new System.EventHandler(this.btn_vibr11_On_Click);
             // 
             // btn_vibr10_On
             // 
+            this.btn_vibr10_On.Enabled = false;
             this.btn_vibr10_On.Location = new System.Drawing.Point(117, 298);
             this.btn_vibr10_On.Name = "btn_vibr10_On";
             this.btn_vibr10_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr10_On.TabIndex = 10;
             this.btn_vibr10_On.Text = "On";
             this.btn_vibr10_On.UseVisualStyleBackColor = true;
+            this.btn_vibr10_On.Click += new System.EventHandler(this.btn_vibr10_On_Click);
             // 
             // btn_vibr9_On
             // 
+            this.btn_vibr9_On.Enabled = false;
             this.btn_vibr9_On.Location = new System.Drawing.Point(117, 269);
             this.btn_vibr9_On.Name = "btn_vibr9_On";
             this.btn_vibr9_On.Size = new System.Drawing.Size(39, 23);
             this.btn_vibr9_On.TabIndex = 9;
             this.btn_vibr9_On.Text = "On";
             this.btn_vibr9_On.UseVisualStyleBackColor = true;
+            this.btn_vibr9_On.Click += new System.EventHandler(this.btn_vibr9_On_Click);
             // 
             // btn_vibr1_Off
             // 
@@ -194,6 +215,7 @@
             this.btn_vibr2_Off.TabIndex = 13;
             this.btn_vibr2_Off.Text = "Off";
             this.btn_vibr2_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr2_Off.Click += new System.EventHandler(this.btn_vibr2_Off_Click_1);
             // 
             // btn_vibr4_Off
             // 
@@ -204,6 +226,7 @@
             this.btn_vibr4_Off.TabIndex = 15;
             this.btn_vibr4_Off.Text = "Off";
             this.btn_vibr4_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr4_Off.Click += new System.EventHandler(this.btn_vibr4_Off_Click);
             // 
             // btn_vibr3_Off
             // 
@@ -214,6 +237,7 @@
             this.btn_vibr3_Off.TabIndex = 14;
             this.btn_vibr3_Off.Text = "Off";
             this.btn_vibr3_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr3_Off.Click += new System.EventHandler(this.btn_vibr3_Off_Click_1);
             // 
             // btn_vibr8_Off
             // 
@@ -224,6 +248,7 @@
             this.btn_vibr8_Off.TabIndex = 19;
             this.btn_vibr8_Off.Text = "Off";
             this.btn_vibr8_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr8_Off.Click += new System.EventHandler(this.btn_vibr8_Off_Click);
             // 
             // btn_vibr7_Off
             // 
@@ -234,6 +259,7 @@
             this.btn_vibr7_Off.TabIndex = 18;
             this.btn_vibr7_Off.Text = "Off";
             this.btn_vibr7_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr7_Off.Click += new System.EventHandler(this.btn_vibr7_Off_Click);
             // 
             // btn_vibr6_Off
             // 
@@ -244,6 +270,7 @@
             this.btn_vibr6_Off.TabIndex = 17;
             this.btn_vibr6_Off.Text = "Off";
             this.btn_vibr6_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr6_Off.Click += new System.EventHandler(this.btn_vibr6_Off_Click);
             // 
             // btn_vibr5_Off
             // 
@@ -254,6 +281,7 @@
             this.btn_vibr5_Off.TabIndex = 16;
             this.btn_vibr5_Off.Text = "Off";
             this.btn_vibr5_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr5_Off.Click += new System.EventHandler(this.btn_vibr5_Off_Click);
             // 
             // btn_vibr11_Off
             // 
@@ -264,6 +292,7 @@
             this.btn_vibr11_Off.TabIndex = 22;
             this.btn_vibr11_Off.Text = "Off";
             this.btn_vibr11_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr11_Off.Click += new System.EventHandler(this.btn_vibr11_Off_Click);
             // 
             // btn_vibr10_Off
             // 
@@ -274,6 +303,7 @@
             this.btn_vibr10_Off.TabIndex = 21;
             this.btn_vibr10_Off.Text = "Off";
             this.btn_vibr10_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr10_Off.Click += new System.EventHandler(this.btn_vibr10_Off_Click);
             // 
             // btn_vibr9_Off
             // 
@@ -284,6 +314,7 @@
             this.btn_vibr9_Off.TabIndex = 20;
             this.btn_vibr9_Off.Text = "Off";
             this.btn_vibr9_Off.UseVisualStyleBackColor = true;
+            this.btn_vibr9_Off.Click += new System.EventHandler(this.btn_vibr9_Off_Click);
             // 
             // label2
             // 
@@ -395,11 +426,22 @@
             this.label12.TabIndex = 33;
             this.label12.Text = "Vibrador 11";
             // 
+            // btn_actualizar
+            // 
+            this.btn_actualizar.Location = new System.Drawing.Point(84, 356);
+            this.btn_actualizar.Name = "btn_actualizar";
+            this.btn_actualizar.Size = new System.Drawing.Size(72, 37);
+            this.btn_actualizar.TabIndex = 34;
+            this.btn_actualizar.Text = "Actualizar estados";
+            this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 414);
+            this.ClientSize = new System.Drawing.Size(246, 414);
+            this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -477,5 +519,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btn_actualizar;
     }
 }

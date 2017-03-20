@@ -57,6 +57,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Configuraciones = new System.Windows.Forms.Button();
+            this.lbl_stick = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura1)).BeginInit();
@@ -308,11 +309,21 @@
             this.btn_Configuraciones.UseVisualStyleBackColor = true;
             this.btn_Configuraciones.Click += new System.EventHandler(this.btn_Configuraciones_Click);
             // 
+            // lbl_stick
+            // 
+            this.lbl_stick.AutoSize = true;
+            this.lbl_stick.Location = new System.Drawing.Point(298, 9);
+            this.lbl_stick.Name = "lbl_stick";
+            this.lbl_stick.Size = new System.Drawing.Size(29, 13);
+            this.lbl_stick.TabIndex = 27;
+            this.lbl_stick.Text = "stick";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 650);
+            this.Controls.Add(this.lbl_stick);
             this.Controls.Add(this.btn_Configuraciones);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_finMonitoreo);
@@ -381,6 +392,7 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_Configuraciones;
+        private System.Windows.Forms.Label lbl_stick;
 
     }
 }

@@ -28,18 +28,13 @@ namespace ScadaCharcas
         public int SetTime1;
         public string confTime2;
         public int SetTime2;
+        public int stick;
         private void conectarPLC()
-        {
-            //try { 
+        {           
             modbusClient = new ModbusClient("192.168.0.100", 502); //dirección estática del plc
             modbusClient.Connect();
             MessageBox.Show("Conexión establecida.");
             timer1.Start();
-            //}
-            //catch {
-  
-            //}
- 
         }
         private void iniciarCaptura()
         {
@@ -59,7 +54,7 @@ namespace ScadaCharcas
                 btn_desconectar.Enabled = true;
                 btn_iniciarMonitoreo.Enabled = true;
                 btn_finMonitoreo.Enabled = false;
-                btn_salir.Enabled = false;
+                //btn_salir.Enabled = false;
             }
             catch
             {
@@ -74,7 +69,7 @@ namespace ScadaCharcas
             btn_desconectar.Enabled = false;
             btn_iniciarMonitoreo.Enabled = false;
             btn_finMonitoreo.Enabled = false;
-            btn_salir.Enabled = true;
+            //btn_salir.Enabled = true;
             modbusClient.Disconnect();
             MessageBox.Show("Conexion cerrada");
             timer1.Stop(); 
@@ -88,6 +83,7 @@ namespace ScadaCharcas
             btn_finMonitoreo.Enabled = true;
             btn_confTm1.Enabled = true;
             btn_confTm2.Enabled = true;
+            btn_Configuraciones.Enabled = true;
             this.iniciarCaptura();
         }
 
@@ -101,6 +97,7 @@ namespace ScadaCharcas
             btn_finMonitoreo.Enabled = false;
             btn_confTm1.Enabled = false;
             btn_confTm2.Enabled = false;
+            btn_Configuraciones.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -123,7 +120,16 @@ namespace ScadaCharcas
             try { 
             lbl_time1.Text = leer_MW[0].ToString();
             lbl_time2.Text = leer_MW[2].ToString();
-                
+            stick++;
+                if (stick >20)
+                {
+                    stick = 0;
+                }
+            lbl_stick.Text = stick.ToString();
+                if (stick > 15)
+                {
+                    modbusClient.WriteSingleCoil(34, false);
+                }
                 }
             catch { }
 
@@ -131,7 +137,13 @@ namespace ScadaCharcas
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
+            //this.Close();
+            modbusClient.WriteSingleCoil(34, true);
+            //if (stick > 15)
+            //{
+            //    modbusClient.WriteSingleCoil(34, false);
+            //}
         }
 
         private void btn_confTm1_Click(object sender, EventArgs e)
@@ -165,6 +177,12 @@ namespace ScadaCharcas
                 MessageBox.Show("Asegurese de introducir solo numeros enteros", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 txt_tm2.Clear();
             }
+        }
+
+        private void btn_Configuraciones_Click(object sender, EventArgs e)
+        {
+            Form2 Formulario2 = new Form2();
+            Formulario2.Show();
         }
     }
 }
