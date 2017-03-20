@@ -56,6 +56,7 @@
             this.btn_finMonitoreo = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btn_salir = new System.Windows.Forms.Button();
+            this.btn_Configuraciones = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura1)).BeginInit();
@@ -296,11 +297,23 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
+            // btn_Configuraciones
+            // 
+            this.btn_Configuraciones.Enabled = false;
+            this.btn_Configuraciones.Location = new System.Drawing.Point(203, 108);
+            this.btn_Configuraciones.Name = "btn_Configuraciones";
+            this.btn_Configuraciones.Size = new System.Drawing.Size(93, 40);
+            this.btn_Configuraciones.TabIndex = 26;
+            this.btn_Configuraciones.Text = "Configuraciones";
+            this.btn_Configuraciones.UseVisualStyleBackColor = true;
+            this.btn_Configuraciones.Click += new System.EventHandler(this.btn_Configuraciones_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 650);
+            this.Controls.Add(this.btn_Configuraciones);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_finMonitoreo);
             this.Controls.Add(this.btn_iniciarMonitoreo);
@@ -367,6 +380,7 @@
         private System.Windows.Forms.Button btn_finMonitoreo;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Button btn_Configuraciones;
 
     }
 }
