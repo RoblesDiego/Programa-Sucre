@@ -32,11 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EasyModbus">
-      <HintPath>..\..\..\Modbus NET completo\EasyModbusLibrary for .NET (DLL)\EasyModbusLibrary for .NET (DLL)\EasyModbus.dll</HintPath>
+    <Reference Include="EasyModbus, Version=2.6.6132.26384, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Modbus NET completo\EasyModbusLibrary for .NET (DLL)\EasyModbusLibrary for .NET (DLL)\EasyModbus.dll</HintPath>
     </Reference>
-    <Reference Include="OpenOPC">
-      <HintPath>..\..\dlls\OpenOPC.dll</HintPath>
+    <Reference Include="OpenOPC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Programa sucre\OpenOPC\OpenOPC\obj\Debug\OpenOPC.dll</HintPath>
     </Reference>
     <Reference Include="ScadaControles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
