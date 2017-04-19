@@ -88,7 +88,7 @@ namespace ScadaCharcas
             btn_finMonitoreo.Enabled = true;
             btn_confTm1.Enabled = true;
             btn_confTm2.Enabled = true;
-            btn_Configuraciones.Enabled = true;
+            //btn_Configuraciones.Enabled = true;
             btn_iniciar.Enabled = true;
             btn_automatico.Enabled = true;
             
@@ -105,7 +105,7 @@ namespace ScadaCharcas
             btn_finMonitoreo.Enabled = false;
             btn_confTm1.Enabled = false;
             btn_confTm2.Enabled = false;
-            btn_Configuraciones.Enabled = false;
+            //btn_Configuraciones.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -189,6 +189,7 @@ namespace ScadaCharcas
 
             if (readcoils[80] == true) //pesar Contenedor de cemento 1
             {
+                //pictureBox7.Image = System.Drawing.Image.FromFile("cuadro_verde2.png");
                 pictureBox7.Image = System.Drawing.Image.FromFile("cuadro_verde2.png");
             }
             else { pictureBox7.Image = System.Drawing.Image.FromFile("cuadro_rojo2.png"); }
@@ -235,38 +236,66 @@ namespace ScadaCharcas
 
         private void btn_Configuraciones_Click(object sender, EventArgs e)
         {
-            Form2 Formulario2 = new Form2();
-            Formulario2.Show();
+            //Form2 Formulario2 = new Form2();
+            //Formulario2.Show();
         }
 
-        private void btn_iniciar_Click(object sender, EventArgs e)
-        {
+        //private void btn_iniciar_Click(object sender, EventArgs e)
+        //{
 
+        //    btn_iniciar.Enabled = false;
+        //    btn_parada.Enabled = true;
+        //    modbusClient.WriteSingleCoil(1, true);
+        //}
+
+        //private void btn_parada_Click(object sender, EventArgs e)
+        //{
+        //    //btn_iniciar.Enabled = true;
+        //    //btn_parada.Enabled = false;
+        //    //modbusClient.WriteSingleCoil(94, true);
+        //}
+
+        //private void btn_automatico_Click(object sender, EventArgs e)
+        //{
+        //    btn_manual.Enabled = true;
+        //    btn_automatico.Enabled = false;
+        //    modbusClient.WriteSingleCoil(0, true);
+
+        //}
+
+        //private void btn_manual_Click(object sender, EventArgs e)
+        //{
+        //    btn_manual.Enabled = false;
+        //    btn_automatico.Enabled = true;
+        //    modbusClient.WriteSingleCoil(0, false);
+        //}
+
+        private void btn_automatico_Click_1(object sender, EventArgs e)
+        {
+            btn_manual.Enabled = true;
+            btn_automatico.Enabled = false;
+            modbusClient.WriteSingleCoil(0, true);
+        }
+
+        private void btn_manual_Click_1(object sender, EventArgs e)
+        {
+            btn_manual.Enabled = false;
+            btn_automatico.Enabled = true;
+            modbusClient.WriteSingleCoil(0, false);
+        }
+
+        private void btn_iniciar_Click_1(object sender, EventArgs e)
+        {
             btn_iniciar.Enabled = false;
             btn_parada.Enabled = true;
             modbusClient.WriteSingleCoil(1, true);
         }
 
-        private void btn_parada_Click(object sender, EventArgs e)
+        private void btn_parada_Click_1(object sender, EventArgs e)
         {
             btn_iniciar.Enabled = true;
             btn_parada.Enabled = false;
             modbusClient.WriteSingleCoil(94, true);
-        }
-
-        private void btn_automatico_Click(object sender, EventArgs e)
-        {
-            btn_manual.Enabled = true;
-            btn_automatico.Enabled = false;
-            modbusClient.WriteSingleCoil(0, true);
-
-        }
-
-        private void btn_manual_Click(object sender, EventArgs e)
-        {
-            btn_manual.Enabled = false;
-            btn_automatico.Enabled = true;
-            modbusClient.WriteSingleCoil(0, false);
         }
     }
 }

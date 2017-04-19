@@ -56,11 +56,26 @@
             this.btn_finMonitoreo = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btn_salir = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.lbl_stick = new System.Windows.Forms.Label();
+            this.btn_parada = new System.Windows.Forms.Button();
+            this.btn_manual = new System.Windows.Forms.Button();
+            this.btn_iniciar = new System.Windows.Forms.Button();
+            this.btn_automatico = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // contenedor11
@@ -296,11 +311,110 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(76, 384);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(47, 19);
+            this.pictureBox3.TabIndex = 26;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(146, 384);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(58, 19);
+            this.pictureBox4.TabIndex = 27;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(226, 384);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(61, 19);
+            this.pictureBox5.TabIndex = 28;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(305, 384);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(55, 19);
+            this.pictureBox6.TabIndex = 29;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(123, 472);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(189, 19);
+            this.pictureBox7.TabIndex = 30;
+            this.pictureBox7.TabStop = false;
+            // 
+            // lbl_stick
+            // 
+            this.lbl_stick.AutoSize = true;
+            this.lbl_stick.Location = new System.Drawing.Point(277, 0);
+            this.lbl_stick.Name = "lbl_stick";
+            this.lbl_stick.Size = new System.Drawing.Size(35, 13);
+            this.lbl_stick.TabIndex = 31;
+            this.lbl_stick.Text = "label5";
+            // 
+            // btn_parada
+            // 
+            this.btn_parada.Location = new System.Drawing.Point(155, 298);
+            this.btn_parada.Name = "btn_parada";
+            this.btn_parada.Size = new System.Drawing.Size(75, 43);
+            this.btn_parada.TabIndex = 32;
+            this.btn_parada.Text = "Parada de proceso";
+            this.btn_parada.UseVisualStyleBackColor = true;
+            this.btn_parada.Click += new System.EventHandler(this.btn_parada_Click_1);
+            // 
+            // btn_manual
+            // 
+            this.btn_manual.Location = new System.Drawing.Point(164, 249);
+            this.btn_manual.Name = "btn_manual";
+            this.btn_manual.Size = new System.Drawing.Size(75, 43);
+            this.btn_manual.TabIndex = 33;
+            this.btn_manual.Text = "Modo Manual";
+            this.btn_manual.UseVisualStyleBackColor = true;
+            this.btn_manual.Click += new System.EventHandler(this.btn_manual_Click_1);
+            // 
+            // btn_iniciar
+            // 
+            this.btn_iniciar.Location = new System.Drawing.Point(64, 298);
+            this.btn_iniciar.Name = "btn_iniciar";
+            this.btn_iniciar.Size = new System.Drawing.Size(75, 43);
+            this.btn_iniciar.TabIndex = 34;
+            this.btn_iniciar.Text = "Iniciar Proceso";
+            this.btn_iniciar.UseVisualStyleBackColor = true;
+            this.btn_iniciar.Click += new System.EventHandler(this.btn_iniciar_Click_1);
+            // 
+            // btn_automatico
+            // 
+            this.btn_automatico.Location = new System.Drawing.Point(67, 249);
+            this.btn_automatico.Name = "btn_automatico";
+            this.btn_automatico.Size = new System.Drawing.Size(75, 43);
+            this.btn_automatico.TabIndex = 35;
+            this.btn_automatico.Text = "Modo Automatico";
+            this.btn_automatico.UseVisualStyleBackColor = true;
+            this.btn_automatico.Click += new System.EventHandler(this.btn_automatico_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 650);
+            this.Controls.Add(this.btn_automatico);
+            this.Controls.Add(this.btn_iniciar);
+            this.Controls.Add(this.btn_manual);
+            this.Controls.Add(this.btn_parada);
+            this.Controls.Add(this.lbl_stick);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_finMonitoreo);
             this.Controls.Add(this.btn_iniciarMonitoreo);
@@ -333,6 +447,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_apertura1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,6 +486,16 @@
         private System.Windows.Forms.Button btn_finMonitoreo;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label lbl_stick;
+        private System.Windows.Forms.Button btn_parada;
+        private System.Windows.Forms.Button btn_manual;
+        private System.Windows.Forms.Button btn_iniciar;
+        private System.Windows.Forms.Button btn_automatico;
 
     }
 }
